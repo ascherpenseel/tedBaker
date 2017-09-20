@@ -1,0 +1,527 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'centurygothic';
+	src: url('fonts/centurygothic.ttf');
+}
+@font-face {
+	font-family: 'centurygothic';
+	src: url('fonts/centurygothicbold.ttf');
+	font-weight: bold;
+}
+
+html, body{
+	width: 9216px;
+	height: 768px;
+	margin: auto auto;
+	background-color: black;
+}
+
+.slide{
+	margin: 0 auto;
+	padding: 0;
+	width: 1024px;
+	height: 768px;
+	float: left;
+	overflow: hidden;
+}
+
+.z1{
+	z-index: 1;
+	position: absolute;
+}
+.z2{
+	z-index: 2;
+	position: absolute;
+}
+.z3{
+	z-index: 3;
+	position: absolute;
+}
+.z4{
+	z-index: 4;
+	position: absolute;
+}
+.z5{
+	z-index: 5;
+	position: absolute;
+}
+
+.preload{
+	display: none;
+}
+
+#slide1 div{
+	left: 0px;
+}
+
+#transition1 div{
+	left: 1024px;
+}
+
+#slide2 div{
+	left: 2048px;
+}
+
+#transition2 div{
+	left: 3072px;
+}
+
+#slide3 div{
+	left: 4096px;
+}
+
+#transition3 div{
+	left: 5120px;
+}
+
+#slide4 div{
+	left: 6144px;
+}
+
+#transition4 div{
+	left: 7168px;
+}
+
+#slide5 div{
+	left: 8192px;
+}
+
+#nav{
+	position: fixed;
+	margin: 0 auto;
+	width: 534px;
+	height: 20px;
+	background-color:rgba(0,0,0,.5);
+	z-index:10;	
+	padding: 10px;
+	left: 235px;
+}
+
+#nav a{
+	color: white;
+	font-size: 14px;
+	font-family: centurygothic;	
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+#nav a:hover{
+	color: pink;	
+}
+
+.texto{
+	float: left;
+	font-size:14px;
+	font-family: centurygothic;
+	color: white;
+}
+
+.titulo{
+	font-size: 35px;
+	font-weight: bold;	
+}
+
+.next{
+	float:left;
+	background:url(img/flecha.png);
+	width: 100px;
+	height: 56px;
+	top: 670px;
+	margin-left:880px;
+}
+
+.next:hover{
+	background: url(img/flecha-hover.png);
+}
+
+#btn-next3{
+	margin-left:935px;	
+}
+
+#calle1{
+	float: left;
+	background: url(img/calle-inicio.jpg);
+	width: 1177px;
+	height: 768px;
+}
+
+#calle2{
+	float: left;
+	background: url(img/calle-final.jpg);
+	width: 1153px;
+	height: 768px;
+	margin-left: -4150px;
+}
+
+#papelpared1, #papelpared2{
+	float: left;
+	background: url(img/backpapel.png) repeat-x;	
+	width: 3072px;
+	height: 768px;
+}
+
+#papelpared2{
+	margin-left: -100px;
+}
+
+#cristal{
+	float: left;
+	background: url(img/cristal.png);
+	opacity: 1;
+	width:1024px;
+	height:768px;
+}
+
+#beefeater{
+	float: left;
+	background: url(img/guardia.png);
+	width:204px;
+	height:338px;
+	top: 430px;
+	margin-left: 120px;
+}
+
+#bus{
+	float: left;
+	background: url(img/autobus.png);
+	width:885px;
+	height:438px;
+	top: 330px;
+	margin-left: -900px;
+}
+
+#cuadro1{
+	float: left;
+	background: url(img/cuadro-bulldog.png);
+	width:188px;
+	height:231px;
+	top: 50px;
+	margin-left: 110px;
+}
+
+#cuadro2{
+	float: left;
+	background: url(img/cuadro-queen.png);
+	width:202px;
+	height:216px;
+	top: 70px;
+	margin-left: 670px;
+}
+
+#cuadro3{
+	float: left;
+	background: url(img/cuadro-vestido.png);
+	width:210px;
+	height:241px;
+	top: 170px;
+	margin-left: 350px;
+}
+
+#perchero{
+	float: left;
+	background: url(img/perchero.png);
+	width:590px;
+	height:280px;
+	top: 488px;
+	margin-left: 530px;
+}
+
+#radio{
+	float: left;
+	background: url(img/radio.png) no-repeat;
+	width:225px;
+	height:293px;
+	top: 280px;
+	margin-left: 650px;
+}
+
+#player{
+	float: left;
+	width:128px;
+	height:20px;
+	top: 447px;
+	margin-left:695px;
+	opacity:.6;
+	left: 1024px;
+}
+
+#espejo{
+	float: left;
+	background: url(img/tienda.png);
+	width:692px;
+	height:600px;
+	top: 50px;
+	margin-left: 300px;
+}
+
+#espejo:hover{
+	background: url(img/tienda-hover.png);	
+}
+
+#langosta{
+	float: left;
+	background: url(img/langosta.png);
+	width:150px;
+	height:217px;
+	top: 100px;
+	margin-left: 150px;
+}
+
+#probador{
+	float: left;
+	background: url(img/probador.png);
+	width:1024px;
+	height:768px;
+	margin-left: -820px;
+}
+
+#backs-probador{
+	width: 606px;
+	height: 433px;
+	float: left;
+	top: 55px;
+	margin-left: -610px;
+}
+
+#backs-probador img{
+	z-index: -2;
+	position:absolute;
+    top:0;
+    left:0;	
+}
+
+#backs-probador img.active{
+	z-index: 0;	
+}
+
+#backs-probador img.last-active{
+	z-index: -1;	
+}
+
+#instaflash{
+	float: left;
+	background:black;
+	width:1024px;
+	height:768px;
+	margin-left: -820px;
+	opacity:0;
+	display: none;
+	text-align:center;
+}
+
+#movil{
+	float: left;
+	background-color:red;
+	width:55px;
+	height:90px;
+	top:440px;
+	margin-left:-15px;
+	opacity:0;	
+}
+
+#instagram{
+	text-decoration:none;
+	color:#900;	
+}
+#instagram:visited{
+	text-decoration:none;	
+	color:white;
+}
+
+#cartel-probador2{
+	float: left;
+	background: url(img/cartel-probador2.png);
+	width: 180px;
+	height: 206px;
+	top: 360px;
+	margin-left: 720px;
+}
+
+#cartel-probador{
+	float: left;
+	background: url(img/cartel-probador.png);
+	width: 200px;
+	height: 138px;
+	top: 100px;
+	margin-left: 700px;
+}
+
+#lampara, #lampara2{
+	float: left;
+	background: url(img/lampara.png);
+	width: 130px;
+	height: 219px;
+	top: 70px;
+}
+
+#lampara{
+	margin-left: 80px;
+}
+
+#lampara2{
+	margin-left: 800px;
+}
+
+#reloj{
+	float: left;
+	background: url(img/reloj.png);
+	width: 250px;
+	height: 500px;
+	top: 268px;
+	margin-left: 500px;
+}
+
+#ropa {
+	float: left;
+	width: 336px;
+	height: 329px;
+	top: 440px;
+	margin-left: 50px;
+}
+
+.ropanormal{
+	background: url(img/ropa.png);
+}
+
+.hueco{
+	background: url(img/ropa-hueco.png);	
+}
+
+#maniqui{
+	float: left;
+	width: 220px;
+	height: 528px;
+	top: 240px;
+	margin-left: 1600px;
+}
+
+.maniquinormal{
+	background: url(img/maniqui.png);
+}
+
+.vestido{
+	background: url(img/maniqui-vestido.png);	
+}
+
+#instaprint, #instaprintas{
+	float: left;
+	width: 140px;
+	height: 218px;
+	top: 368px;
+	margin-left: 200px;
+}
+
+#instaprint{
+	background: url(img/instaprint.png);
+}
+
+#instaprintas{
+	background: url(img/instaprint.gif);
+}
+
+#ordenador{
+	float: left;
+	background: url(img/imac.png);
+	width: 617px;
+	height: 570px;
+	top: 198px;
+	margin-left: 2500px;
+}
+
+#spider{
+	float: left;
+	background: url(img/lamparatecho.png);
+	width: 400px;
+	height: 400px;
+	top: -60px;
+	margin-left: 3000px;
+}
+
+#mesita{
+	float: left;
+	background: url(img/mesita.png);
+	width: 300px;
+	height: 243px;
+	top: 525px;
+	margin-left: 100px;
+}
+
+#bakerst{
+	float: left;
+	background: url(img/bakerst.png);
+	width: 200px;
+	height: 121px;
+	top: 100px;
+	margin-left: 600px;
+}
+
+#gabardina{
+	float: left;
+	background: url(img/percheropie.png);
+	width: 250px;
+	height: 500px;
+	top: 268px;
+	margin-left: 600px;
+}
+
+#paragua{
+	float: left;
+	background: url(img/paraguero.png);
+	width: 157px;
+	height: 350px;
+	top: 418px;
+	margin-left: 750px;
+}
+
+#marquesina{
+	float: left;
+	background: url(img/marquesina.png);
+	width: 269px;
+	height: 500px;
+	top: 268px;
+	margin-left: -1500px;
+}
+
+#texto-idea{
+	margin-left: 50px;
+	top: 250px;
+	width: 200px;	
+}
+
+#texto-step1{
+	margin-left: 50px;
+	top: 30px;
+	width: 200px;	
+}
+
+#texto-step2{
+	top: 440px;
+	margin-left: -645px;
+	width: 300px;	
+}
+
+#texto-step3{
+	text-align:right;
+	top: 30px;
+	margin-left: 550px;
+	width: 400px;	
+}
+
+#texto-step4{
+	top: 60px;
+	margin-left: -3600px;
+	width: 450px;
+	padding-left:30px;
+	padding-right:30px;
+	background-color:rgba(0,0,0,.3);	
+}
+
+#finaloverlay{
+	display: none;
+	float: left;
+	width: 1024px;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
